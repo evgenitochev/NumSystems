@@ -9,7 +9,7 @@ class BinToDec
     {
         long number = long.Parse(Console.ReadLine());
 
-        List<double> digits = new List<double>();
+        List<double> digits = new List<double>(); //declare array
 
         while (number > 0)
         {
@@ -19,7 +19,7 @@ class BinToDec
 
         for (int i = 0; i < digits.Count; i++)
         {
-            digits[i] = digits[i] * Math.Pow(2, i);
+            digits[i] = digits[i] * Math.Pow(2, i); 
         }
 
         double sum = 0;
